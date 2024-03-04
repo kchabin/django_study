@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     #url과 그 url이 들어올 때 어떻게 처리할 지 명시한다.
+    path('<int:pk>/', views.single_post_page),
     path('', views.index),
 ]
